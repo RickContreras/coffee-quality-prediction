@@ -14,6 +14,8 @@ La predicción de la calidad del café puede ayudar a democratizar la evaluació
   - `preprocessing.py` : Funciones y clases para preprocesamiento de datos
   - `train.py` : Scripts para entrenamiento y validación de modelos
   - `evaluate.py` : Evaluación y generación de reportes de desempeño
+- `scripts/` : Scripts utilitarios para configuración y descarga de datos
+  - `download_data.py` : Script para descargar datos desde Kaggle
 - `models/` : Modelos entrenados guardados (pickle, joblib)
 - `reports/` : Resultados, gráficos, y reporte final en formato PDF
 - `requirements.txt` : Lista de dependencias y versiones para reproducibilidad
@@ -22,64 +24,108 @@ La predicción de la calidad del café puede ayudar a democratizar la evaluació
 
 ## Requisitos e Instalación
 
-Este proyecto fue desarrollado en Python 3.8+ con las siguientes principales librerías:
-
-(por definir)
+Este proyecto fue desarrollado en Python 3.12.3 con las siguientes principales librerías:
 
 - pandas
 - numpy
 - scikit-learn
 - matplotlib
 - seaborn
-- umap-learn
+- umap-learn 
+- kaggle
 
 Para instalar las dependencias:
+
+Crea el entorno virtual
+
+Linux / macOS
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Windows (PowerShell)
+```powershell
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+
+Windows (cmd)
+```bat
+python -m venv .venv
+.venv\Scripts\activate.bat
+```
+
+Conda (opcional)
+```bash
+conda create -n coffee python=3.12.3 -y
+conda activate coffee
+```
+
+Instala depedencias
 
 ```bash
 pip install -r requirements.txt
 ```
 
+### Configuración de Kaggle API
+
+Para descargar los datos automáticamente, necesitas configurar tus credenciales de Kaggle:
+
+1. Inicia sesión en [Kaggle](https://www.kaggle.com/)
+2. Ve a tu perfil → **Settings** → **API** → **Create New API Token**
+3. Se descargará un archivo `kaggle.json`
+4. Pon `kaggle.json` en la raiz de este proyecto:
+
 ## Uso y Ejecución
 
-1. Descargar la base de datos original del CQI desde Kaggle:  
-   https://www.kaggle.com/datasets/volpatto/coffee-quality-database-from-cqi/data  
-   y colocarla en `data/raw/`.
+1. **Descargar datos automáticamente**:
 
-2. Ejecutar el preprocesamiento:  
+```bash
+python scripts/download_data.py
+```
+
+   O manualmente desde: https://www.kaggle.com/datasets/volpatto/coffee-quality-database-from-cqi/data
+
+2. **Ejecutar el preprocesamiento**:  
 
 ```bash
 python src/preprocessing.py
 ```
 
-3. Entrenar modelos:  
+3. **Entrenar modelos**:  
 ```bash
 python src/train.py
 ```
 
-4. Evaluar modelos y generar reportes:  
+4. **Evaluar modelos y generar reportes**:  
 ```bash
 python src/evaluate.py
 ```
-5. Explorar notebooks para análisis visuales y exploratorios en `notebooks/`.
+
+5. **Explorar notebooks** para análisis visuales y exploratorios en `notebooks/`.
 
 ## Estructura del Proyecto
 
 ```bash
 coffee-quality-prediction/
 ├── data/
-│ ├── raw/
-│ └── processed/
+│   ├── raw/
+│   └── processed/
 ├── notebooks/
 ├── src/
-│ ├── preprocessing.py
-│ ├── train.py
-│ └── evaluate.py
+│   ├── preprocessing.py
+│   ├── train.py
+│   └── evaluate.py
+├── scripts/
+│   └── download_data.py
 ├── models/
 ├── reports/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
+
 ## Autores
 
 - Ricardo Contreras Garzón
