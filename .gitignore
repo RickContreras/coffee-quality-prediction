@@ -394,3 +394,5 @@ data/*
 models/*
 kaggle.json
 reports/*
+
+docs/*

@@ -33,6 +33,13 @@ Este proyecto fue desarrollado en Python 3.12.3 con las siguientes principales l
 - seaborn
 - umap-learn 
 - kaggle
+- plotly
+- missingno
+- jupyter
+- ipykernel
+- notebook
+- joblib
+- scipy  
 
 Para instalar las dependencias:
 
@@ -104,6 +111,16 @@ python src/evaluate.py
 ```
 
 5. **Explorar notebooks** para análisis visuales y exploratorios en `notebooks/`.
+
+## Jupyter Notebook
+
+```bash
+# Opción 1: Jupyter Notebook clásico
+jupyter notebook
+
+# Opción 2: JupyterLab (más moderno)
+jupyter lab
+```
 
 ## Estructura del Proyecto
 
