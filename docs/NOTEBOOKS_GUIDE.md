@@ -1,6 +1,3 @@
-# NOTEBOOKS_GUIDE.md
-
-```markdown
 # Guía de Notebooks para Proyecto de Predicción de Calidad del Café
 
 Esta guía describe el propósito, contenido y entregables de cada notebook en el proyecto.
@@ -829,21 +826,5 @@ Antes de finalizar cada notebook, verificar:
 
 ---
 
-**Última actualización**: 2025-10-23
-**Versión**: 1.0
-```
-
-***
-
-Este archivo `.md` te servirá como guía completa para desarrollar cada notebook del proyecto de manera profesional, organizada y cumpliendo con todos los requisitos del curso. Guárdalo en la raíz de tu repositorio para que tú y cualquier colaborador sepan exactamente qué hacer en cada etapa.
-
-[1](https://github.com/kylebradbury/ml-project-structure-demo)
-[2](https://www.reddit.com/r/MachineLearning/comments/g8h58c/d_how_do_you_structure_and_organize_your_mldl/)
-[3](https://www.kaggle.com/general/4815)
-[4](https://app.readytensor.ai/publications/markdown-for-machine-learning-projects-a-comprehensive-guide-LX9cbIx7mQs9)
-[5](https://github.com/onesamblack/machine-learning-template/blob/main/README.md)
-[6](https://domino.ai/blog/the-importance-of-structure-coding-style-and-refactoring-in-notebooks)
-[7](https://dev.to/luxdevhq/generic-folder-structure-for-your-machine-learning-projects-4coe)
-[8](https://github.com/ZenithClown/ai-ml-project-template)
-[9](https://towardsdatascience.com/its-time-to-structure-your-data-science-project-1fa064fbe46/)
-[10](https://www.overleaf.com/latex/templates)
+**Última actualización**: 2025-11-06
+**Versión**: 1.1
