@@ -53,8 +53,13 @@ source .venv/bin/activate
 
 Windows (PowerShell)
 ```powershell
+# Dependiendo de tu version, deberas usar una combinacion de
+# comandos diferente
 python -m venv .venv
-.venv\Scripts\Activate.ps1
+python3 -m venv .venv
+
+./.venv/Scripts/Activate.ps1
+./.venv/bin/Activate.ps1
 ```
 
 Windows (cmd)
