@@ -39,7 +39,8 @@ Este proyecto fue desarrollado en Python 3.12.3 con las siguientes principales l
 - ipykernel
 - notebook
 - joblib
-- scipy  
+- scipy
+- xgboost  
 
 Para instalar las dependencias:
 
@@ -99,23 +100,8 @@ python scripts/download_data.py
 
    O manualmente desde: https://www.kaggle.com/datasets/volpatto/coffee-quality-database-from-cqi/data
 
-2. **Ejecutar el preprocesamiento**:  
+2. **Ejecuta los notebooks en orden**  
 
-```bash
-python src/preprocessing.py
-```
-
-3. **Entrenar modelos**:  
-```bash
-python src/train.py
-```
-
-4. **Evaluar modelos y generar reportes**:  
-```bash
-python src/evaluate.py
-```
-
-5. **Explorar notebooks** para análisis visuales y exploratorios en `notebooks/`.
 
 ## Jupyter Notebook
 
@@ -135,10 +121,6 @@ coffee-quality-prediction/
 │   ├── raw/
 │   └── processed/
 ├── notebooks/
-├── src/
-│   ├── preprocessing.py
-│   ├── train.py
-│   └── evaluate.py
 ├── scripts/
 │   └── download_data.py
 ├── models/
@@ -166,4 +148,3 @@ coffee-quality-prediction/
 ## Referencias
 
 - Coffee Quality Institute - CQI database: https://www.kaggle.com/datasets/volpatto/coffee-quality-database-from-cqi/data
-- Artículos relacionados revisados y usados para guía metodológica (Por agregar)
